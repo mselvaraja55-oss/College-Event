@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .banner {
+            background-color: lightblue;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .schedule {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .event {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .schedule {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Joy University</h1>
+        <h2>College Tech Fest 2026</h2>
+    </header>
+
+    <div class="banner">
+        <h2>Welcome to Tech Fest</h2>
+        <p>Join us for coding, games and fun!</p>
+        <button onclick="register()">Register Now</button>
+    </div>
+
+    <h2 style="text-align:center;">Event Schedule</h2>
+
+    <div class="schedule">
+        <div class="event">
+            <h3>Coding Competition</h3>
+            <p>10:00 AM</p>
+        </div>
+
+        <div class="event">
+            <h3>Quiz Competition</h3>
+            <p>12:00 PM</p>
+        </div>
+
+        <div class="event">
+            <h3>Project Expo</h3>
+            <p>2:00 PM</p>
+        </div>
+    </div>
+
+    <script>
+        function register() {
+            alert("Registration Successful!");
+        }
+    </script>
+
+</body>
+</html>
